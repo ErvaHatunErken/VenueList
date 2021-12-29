@@ -13,6 +13,15 @@
 		8DA22DE2277B7FB500CCEF25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA22DE0277B7FB500CCEF25 /* Main.storyboard */; };
 		8DA22DE4277B7FB700CCEF25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DA22DE3277B7FB700CCEF25 /* Assets.xcassets */; };
 		8DA22DE7277B7FB700CCEF25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA22DE5277B7FB700CCEF25 /* LaunchScreen.storyboard */; };
+		8DA22DF3277B812F00CCEF25 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA22DF2277B812F00CCEF25 /* Welcome.swift */; };
+		8DA22DFC277C6A8100CCEF25 /* VenuePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA22DF6277C6A8100CCEF25 /* VenuePresenter.swift */; };
+		8DA22DFD277C6A8100CCEF25 /* VenueWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA22DF7277C6A8100CCEF25 /* VenueWorker.swift */; };
+		8DA22DFE277C6A8100CCEF25 /* VenueRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA22DF8277C6A8100CCEF25 /* VenueRouter.swift */; };
+		8DA22DFF277C6A8100CCEF25 /* VenueModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA22DF9277C6A8100CCEF25 /* VenueModels.swift */; };
+		8DA22E00277C6A8100CCEF25 /* VenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA22DFA277C6A8100CCEF25 /* VenueViewController.swift */; };
+		8DA22E01277C6A8100CCEF25 /* VenueInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA22DFB277C6A8100CCEF25 /* VenueInteractor.swift */; };
+		8DA22E04277C8E7100CCEF25 /* VenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA22E03277C8E7100CCEF25 /* VenueTableViewCell.swift */; };
+		8DA22E09277CC6AF00CCEF25 /* EmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA22E08277CC6AF00CCEF25 /* EmptyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		8DA22DE3277B7FB700CCEF25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DA22DE6277B7FB700CCEF25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DA22DE8277B7FB700CCEF25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DA22DF2277B812F00CCEF25 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		8DA22DF6277C6A8100CCEF25 /* VenuePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuePresenter.swift; sourceTree = "<group>"; };
+		8DA22DF7277C6A8100CCEF25 /* VenueWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueWorker.swift; sourceTree = "<group>"; };
+		8DA22DF8277C6A8100CCEF25 /* VenueRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueRouter.swift; sourceTree = "<group>"; };
+		8DA22DF9277C6A8100CCEF25 /* VenueModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueModels.swift; sourceTree = "<group>"; };
+		8DA22DFA277C6A8100CCEF25 /* VenueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueViewController.swift; sourceTree = "<group>"; };
+		8DA22DFB277C6A8100CCEF25 /* VenueInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueInteractor.swift; sourceTree = "<group>"; };
+		8DA22E03277C8E7100CCEF25 /* VenueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueTableViewCell.swift; sourceTree = "<group>"; };
+		8DA22E08277CC6AF00CCEF25 /* EmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,8 @@
 		8DA22DD9277B7FB500CCEF25 /* VenueList */ = {
 			isa = PBXGroup;
 			children = (
+				8DA22DF4277C5A0100CCEF25 /* Scenes */,
+				8DA22DF1277B80AE00CCEF25 /* Model */,
 				8DA22DDA277B7FB500CCEF25 /* AppDelegate.swift */,
 				8DA22DDC277B7FB500CCEF25 /* SceneDelegate.swift */,
 				8DA22DDE277B7FB500CCEF25 /* ViewController.swift */,
@@ -65,6 +85,45 @@
 				8DA22DE8277B7FB700CCEF25 /* Info.plist */,
 			);
 			path = VenueList;
+			sourceTree = "<group>";
+		};
+		8DA22DF1277B80AE00CCEF25 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8DA22DF2277B812F00CCEF25 /* Welcome.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8DA22DF4277C5A0100CCEF25 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8DA22DF5277C6A4000CCEF25 /* Venue */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8DA22DF5277C6A4000CCEF25 /* Venue */ = {
+			isa = PBXGroup;
+			children = (
+				8DA22E02277C8E3000CCEF25 /* Cells */,
+				8DA22DF6277C6A8100CCEF25 /* VenuePresenter.swift */,
+				8DA22DF7277C6A8100CCEF25 /* VenueWorker.swift */,
+				8DA22DF8277C6A8100CCEF25 /* VenueRouter.swift */,
+				8DA22DF9277C6A8100CCEF25 /* VenueModels.swift */,
+				8DA22DFA277C6A8100CCEF25 /* VenueViewController.swift */,
+				8DA22DFB277C6A8100CCEF25 /* VenueInteractor.swift */,
+			);
+			path = Venue;
+			sourceTree = "<group>";
+		};
+		8DA22E02277C8E3000CCEF25 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8DA22E03277C8E7100CCEF25 /* VenueTableViewCell.swift */,
+				8DA22E08277CC6AF00CCEF25 /* EmptyTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +197,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DA22DFE277C6A8100CCEF25 /* VenueRouter.swift in Sources */,
+				8DA22DFD277C6A8100CCEF25 /* VenueWorker.swift in Sources */,
+				8DA22DF3277B812F00CCEF25 /* Welcome.swift in Sources */,
+				8DA22DFC277C6A8100CCEF25 /* VenuePresenter.swift in Sources */,
 				8DA22DDF277B7FB500CCEF25 /* ViewController.swift in Sources */,
+				8DA22E01277C6A8100CCEF25 /* VenueInteractor.swift in Sources */,
+				8DA22E00277C6A8100CCEF25 /* VenueViewController.swift in Sources */,
 				8DA22DDB277B7FB500CCEF25 /* AppDelegate.swift in Sources */,
+				8DA22E04277C8E7100CCEF25 /* VenueTableViewCell.swift in Sources */,
+				8DA22DFF277C6A8100CCEF25 /* VenueModels.swift in Sources */,
 				8DA22DDD277B7FB500CCEF25 /* SceneDelegate.swift in Sources */,
+				8DA22E09277CC6AF00CCEF25 /* EmptyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
