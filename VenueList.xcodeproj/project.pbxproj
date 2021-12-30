@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D407291277E320F00E8E5D2 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D407290277E320F00E8E5D2 /* SearchTableViewCell.swift */; };
 		8DA22DDB277B7FB500CCEF25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA22DDA277B7FB500CCEF25 /* AppDelegate.swift */; };
 		8DA22DDD277B7FB500CCEF25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA22DDC277B7FB500CCEF25 /* SceneDelegate.swift */; };
 		8DA22DDF277B7FB500CCEF25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA22DDE277B7FB500CCEF25 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D407290277E320F00E8E5D2 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		8DA22DD7277B7FB500CCEF25 /* VenueList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VenueList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA22DDA277B7FB500CCEF25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DA22DDC277B7FB500CCEF25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			children = (
 				8DA22E03277C8E7100CCEF25 /* VenueTableViewCell.swift */,
 				8DA22E08277CC6AF00CCEF25 /* EmptyTableViewCell.swift */,
+				8D407290277E320F00E8E5D2 /* SearchTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				8DA22E01277C6A8100CCEF25 /* VenueInteractor.swift in Sources */,
 				8DA22E00277C6A8100CCEF25 /* VenueViewController.swift in Sources */,
 				8DA22DDB277B7FB500CCEF25 /* AppDelegate.swift in Sources */,
+				8D407291277E320F00E8E5D2 /* SearchTableViewCell.swift in Sources */,
 				8DA22E04277C8E7100CCEF25 /* VenueTableViewCell.swift in Sources */,
 				8DA22DFF277C6A8100CCEF25 /* VenueModels.swift in Sources */,
 				8DA22DDD277B7FB500CCEF25 /* SceneDelegate.swift in Sources */,
