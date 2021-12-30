@@ -21,7 +21,6 @@ protocol VenueDisplayLogic: AnyObject {
 class VenueViewController: UIViewController, VenueDisplayLogic, CLLocationManagerDelegate {
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var textField: UITextField!
     
     var displayedVenues: [Venue.FetchVenue.ViewModel.DisplayedVenues] = []
     var locationManager = CLLocationManager()
@@ -70,7 +69,7 @@ class VenueViewController: UIViewController, VenueDisplayLogic, CLLocationManage
   // MARK: View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title =  "Venues Around You"
         self.locationManager.requestAlwaysAuthorization()
         locationManager.requestWhenInUseAuthorization()
         
@@ -79,7 +78,6 @@ class VenueViewController: UIViewController, VenueDisplayLogic, CLLocationManage
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
         }
-        setupTextFields()
     }
   
     func getVenues(lon: String, lat: String) {
@@ -116,24 +114,6 @@ class VenueViewController: UIViewController, VenueDisplayLogic, CLLocationManage
         getVenues(lon: longitude, lat: latitude)
         locationManager.stopUpdatingLocation()
     }
-    
-    func setupTextFields() {
-        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace,
-                                        target: nil, action: nil)
-        let doneButton = UIBarButtonItem(title: "Done", style: .done,
-                                        target: self, action: #selector(doneButtonTapped))
-        let toolbar = UIToolbar()
-        toolbar.setItems([flexSpace, doneButton], animated: true)
-        toolbar.sizeToFit()
-        textField.inputAccessoryView = toolbar
-    }
-    
-    @objc func doneButtonTapped() {
-        sleepTime = 0
-        getVenues(lon: longitude, lat: latitude)
-        view.endEditing(true)
-    }
-        
 }
 
 extension VenueViewController: UITableViewDelegate, UITableViewDataSource {
